@@ -15,4 +15,5 @@ RUN ./scripts/install-mvn.sh ${MVN_VERSION}
 
 #Keep the docker container running by a tail watch.
 #Was used for sshing and testing container setup. May need to remove when used as a Jenkins agent.
+#NOTE: You can ssh while first the image. docker run -it <image name> <command>. Reference: http://phase2.github.io/devtools/common-tasks/ssh-into-a-container/
 CMD tail -f /dev/null
