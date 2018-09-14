@@ -47,4 +47,4 @@ apt-get -y install docker-ce=${DOCKER_VERSION}
 whoami
 
 #Print docker version. Problem is the docker.sock (docker socket) did not get added under /var/run
-docker version
+# docker version
