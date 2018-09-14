@@ -46,5 +46,5 @@ apt-get -y install docker-ce=${DOCKER_VERSION}
 #Print current user to see if root
 whoami
 
-#Print docker version. Problem is the docker.sock (docker socket) did not get added under /var/run
-docker version
+#Cannot use docker daemon unless you mount the host socket when running the image. docker run -v /var/run/docker.sock:/var/run/docker.sock -it jenkins-pipeline-tooling:latest bash
+#docker version
